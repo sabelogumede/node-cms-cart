@@ -22,9 +22,11 @@ app.set('view engine', 'ejs');
 // set public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+// route
 app.get('/', function(req, res) {
-    res.send('working');
+    res.render('index', {
+        title: 'Home'
+    });
 })
 
 // Start the server
