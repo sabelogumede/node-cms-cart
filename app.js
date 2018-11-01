@@ -47,6 +47,7 @@ app.use(session({
     cookie: { secure: true }
 }));
 
+
 // Express Validator middleware
 app.use(ExpressValidator({
     errorFormatter: function(param, msg, value) {
